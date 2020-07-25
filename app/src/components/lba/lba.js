@@ -29,7 +29,7 @@ class LargeBoxApp extends Component {
 
 		//State values
 		this.INPUT_STATE = "input";
-		this.PRINT_STATE = "print";
+		this.PRINT_STATE = "output";
 
 		//Input Index keys
 		this.REQ_ID_INDEX = 0;
@@ -70,7 +70,7 @@ class LargeBoxApp extends Component {
   			input[i] = input[i].split(/\t/);
   			output[i] = {}; 
   			output[i].id = input[i][this.REQ_ID_INDEX];
-  			output[i].name = input[i][this.NAME_INDEX].toUpperCase();
+  			output[i].name = input[i][this.NAME_INDEX].toUpperCase(); //Change name to upper case so that the sortting by name wont be confused with case issues.
   			
   			//Check to see if dimensions need to be changed
   			let tempL = parseFloat(input[i][this.LENGTH_INDEX]);
@@ -95,8 +95,10 @@ class LargeBoxApp extends Component {
 	  		}
   		}
 
+  		//Sort out by names
   		output.sort((a, b) => (a.name).localeCompare(b.name));
 
+  		//Save output to labels and change view to output
   		this.setState({labels: output});
   		this.setState({view: this.PRINT_STATE});
 
