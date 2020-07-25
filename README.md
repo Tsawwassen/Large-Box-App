@@ -45,13 +45,18 @@ The current process regarding large boxes in the Reverse Logistics (RL) departme
       - Use text area.
       - Confirm that cells are split by TAB character.
       - Confirm that each line is a new request.
-  2. Create working label 
+  2. Create working label.
       - Display given information in 1" x 2" box.
       - use CSS to print each box on its own page.
   3. Put steps 1 and 2 together.
-  4. Test app.
+      - Once the app is working, add some bootstrap classes to clean up the input form, and other pages if needed.
+  4. Test process locally.
+      - Are the expected number of labels getting printed?
+      - Are the labels printing the correct information?
+      - Are the box dimensions getting swapped if needed?
+  5. Test app.
       - Confirm the label layout is clear, large, uses space neatly.
-      - Get feed back from user on working process
+      - Get feedback from user on working process
               
 *Double check the default box type.
 **Check labels that are being used.
@@ -60,6 +65,6 @@ The current process regarding large boxes in the Reverse Logistics (RL) departme
 ~                                                                                   ~
 ~ This app was created on my own time for my current job at Ingram Micro.           ~
 ~ I was not asked by anyone at my job to create this app.                           ~
-~ The job ispiered by to document the process, issues, and how it can be improved   ~
+~ The job ispiered by to document a process, and how it can be improved.             ~
 ~                                                                                   ~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
