@@ -61,10 +61,14 @@ The current process regarding large boxes in the Reverse Logistics (RL) departme
 *Double check the default box type.
 **Check labels that are being used.
 
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~                                                                                   ~
 ~ This app was created on my own time for my current job at Ingram Micro.           ~
 ~ I was not asked by anyone at my job to create this app.                           ~
-~ The job ispiered by to document a process, and how it can be improved.             ~
+~ The job inspired by to document a process, and how it can be improved.             ~
 ~                                                                                   ~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
