@@ -15,7 +15,7 @@ class Navigation extends Component {
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/">Warehouse Label App</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="#">Large Box App</Nav.Link>
+            <Nav.Link href="/lba">Large Box App</Nav.Link>
           </Nav>
         </Navbar>
       </div>
