@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Components import
 import Navigation from '../nav/nav.js';
+import LargeBoxApp from '../lba/lba.js';
 
 //CSS
 import './App.css';
@@ -15,9 +16,13 @@ function App() {
 	  	<div className="App">
 			<Navigation />
 			<Switch>
-			  	<Route path="/">
-					<h1> hello</h1>
+				<Route path="/lba">
+			  		<LargeBoxApp />
 			  	</Route>
+			  	<Route path="/">
+					<h2> Please select a label type from the top </h2>
+			  	</Route>
+			  
 			</Switch>
 		</div>
 	</Router>
