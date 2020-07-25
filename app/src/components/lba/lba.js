@@ -70,7 +70,7 @@ class LargeBoxApp extends Component {
   			input[i] = input[i].split(/\t/);
   			output[i] = {}; 
   			output[i].id = input[i][this.REQ_ID_INDEX];
-  			output[i].name = input[i][this.NAME_INDEX];
+  			output[i].name = input[i][this.NAME_INDEX].toUpperCase();
   			
   			//Check to see if dimensions need to be changed
   			let tempL = parseFloat(input[i][this.LENGTH_INDEX]);
@@ -94,6 +94,8 @@ class LargeBoxApp extends Component {
 	  			output[i].h =  1;
 	  		}
   		}
+
+  		output.sort((a, b) => (a.name).localeCompare(b.name));
 
   		this.setState({labels: output});
   		this.setState({view: this.PRINT_STATE});
