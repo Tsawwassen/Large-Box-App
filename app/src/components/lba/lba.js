@@ -95,8 +95,6 @@ class LargeBoxApp extends Component {
 	  		}
   		}
 
-  		console.log(output);
-  		
   		this.setState({labels: output});
   		this.setState({view: this.PRINT_STATE});
 
@@ -120,9 +118,8 @@ class LargeBoxApp extends Component {
 					<LBAInput value={this.state.value} onChange={this.handleInputChange} onSubmit={this.handleCreateButton} />
 				}
 				{this.state.view === this.PRINT_STATE &&
-					<LBAOutput onClick={this.handleBackButton} />
+					<LBAOutput onClick={this.handleBackButton} labels={this.state.labels}/>
 				}
-
 	 		</div>
 		);
   	}

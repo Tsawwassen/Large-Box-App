@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class LBAOutput extends Component {
 	render () {
+		//console.log(this.props.labels);
 		return (
 			<div>
 				<h1>print component</h1>
