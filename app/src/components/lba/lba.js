@@ -1,6 +1,24 @@
 import React, { Component } from 'react';
 import LBAInput from './lba_input.js';
+import LBAOutput from './lba_output.js';
 
+
+/*********************************************
+*
+*		Sample Data
+
+	1	a	36	36	36
+	2	b	5	5	36
+	3	a	5	36	5
+	4	c	36	5	5
+	5	a	5	5	5
+	6	b	4.5	17.6	17.3
+	7	c	4.5	18.1	18.1
+	8	a	20	18.1	18.1
+
+*
+*
+*********************************************/
 
 
 class LargeBoxApp extends Component {
@@ -73,6 +91,8 @@ class LargeBoxApp extends Component {
 	  			output[i].h =  1;
 	  		}
   		}
+
+  		console.log(output);
   		
   		this.setState({labels: output});
   		this.setState({view: this.PRINT_STATE});
@@ -92,7 +112,7 @@ class LargeBoxApp extends Component {
 					<LBAInput value={this.state.value} onChange={this.handleInputChange} onSubmit={this.handleCreateButton} />
 				}
 				{this.state.view === this.PRINT_STATE &&
-					<h1>print</h1>
+					<LBAOutput />
 				}
 
 	 		</div>
