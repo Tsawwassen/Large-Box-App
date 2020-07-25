@@ -51,6 +51,9 @@ class LargeBoxApp extends Component {
 		this.handleCreateButton = this.handleCreateButton.bind(this);
 		this.handleInputChange = this.handleInputChange.bind(this);
 
+		//LBA Output Binds
+		this.handleBackButton = this.handleBackButton.bind(this);
+
 	}
 
 	handleCreateButton(event){
@@ -104,6 +107,11 @@ class LargeBoxApp extends Component {
   		this.setState({value: event.target.value});
   	}
 
+  	handleBackButton(event){
+  		this.setState({value: ''});
+  		this.setState({view: this.INPUT_STATE});
+  	}
+
 	render () {
 		return (
 			<div>
@@ -112,7 +120,7 @@ class LargeBoxApp extends Component {
 					<LBAInput value={this.state.value} onChange={this.handleInputChange} onSubmit={this.handleCreateButton} />
 				}
 				{this.state.view === this.PRINT_STATE &&
-					<LBAOutput />
+					<LBAOutput onClick={this.handleBackButton} />
 				}
 
 	 		</div>

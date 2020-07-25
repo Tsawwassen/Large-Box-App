@@ -5,6 +5,7 @@ class LBAOutput extends Component {
 		return (
 			<div>
 				<h1>print component</h1>
+				<button onClick={this.props.onClick}>Back</button>
 			</div>
 		);
   	}
