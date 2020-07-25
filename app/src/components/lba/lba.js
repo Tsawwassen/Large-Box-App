@@ -20,6 +20,9 @@ class LargeBoxApp extends Component {
 		this.WIDTH_INDEX = 3;
 		this.HEIGHT_INDEX = 4;
 
+		//Large Box Max Size
+		this.LARGE_BOX_MAX_SIZE = 36;
+
 		this.state = {
 			view: this.INPUT_STATE,
 			value: '',
@@ -35,28 +38,41 @@ class LargeBoxApp extends Component {
 	handleCreateButton(event){
 
   		//Parse value to get label information
-
   		let input = this.state.value.split(/\r?\n/); //Each line in value is a lable request
-
   		if(input[input.length-1].length === 0){ //Check the last elementis blank, remove it from the array if it is
   			input.pop(); 
   		}
-  		
+
+  		//Create output hash list
   		let output = []
   		for(let i = 0 ; i < input.length ; i++){ //Parse each line for label information
   			input[i] = input[i].split(/\t/);
   			output[i] = {}; 
   			output[i].id = input[i][this.REQ_ID_INDEX];
   			output[i].name = input[i][this.NAME_INDEX];
-  			output[i].l = input[i][this.LENGTH_INDEX];
-  			output[i].w = input[i][this.WIDTH_INDEX];
-  			output[i].h =  input[i][this.HEIGHT_INDEX];
+  			
+  			//Check to see if dimensions need to be changed
+  			let tempL = parseFloat(input[i][this.LENGTH_INDEX]);
+  			let tempW = parseFloat(input[i][this.WIDTH_INDEX]);
+  			let tempH = parseFloat(input[i][this.HEIGHT_INDEX]);
+  			if((tempW + tempH) < this.LARGE_BOX_MAX_SIZE){ //No Changes needed
+	  			output[i].l = tempL;
+	  			output[i].w = tempW;
+	  			output[i].h =  tempH;
+	  		} else if((tempL+ tempH) < this.LARGE_BOX_MAX_SIZE){ //Swap given length with width
+	  			output[i].l = tempW;
+	  			output[i].w = tempL;
+	  			output[i].h =  tempH;
+	  		}else if((tempW + tempL) < this.LARGE_BOX_MAX_SIZE){ //Swap given height with length
+	  			output[i].l = tempH;
+	  			output[i].w = tempW;
+	  			output[i].h = tempL;
+	  		}else{ 	//Set box dimensions to 1 if sizes are too big for printer.
+	  			output[i].l = 1;
+	  			output[i].w = 1;
+	  			output[i].h =  1;
+	  		}
   		}
-
-  		//console.log(output);
-  		//Once the array is populated, check for label requests that are too big.
-  		////Swap values as needed.
-
   		
   		this.setState({labels: output});
   		this.setState({view: this.PRINT_STATE});
@@ -67,8 +83,6 @@ class LargeBoxApp extends Component {
   	handleInputChange(event){
   		this.setState({value: event.target.value});
   	}
-
-
 
 	render () {
 		return (
