@@ -4,8 +4,9 @@
   "description": "App to create labels for large box requests",
   "main": "index.js",
   "scripts": {
-    "start" : "cd app && npm start"
+    "start": "cd app && npm start"
   },
   "author": "Mitchell Smith",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
