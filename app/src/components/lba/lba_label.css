@@ -1,9 +1,36 @@
 
-.LBALabel{
+.LBA_Label{
 	    border-style: solid; /** Used for testing **/
         width:50.8mm;
         height:25.4mm;
         page-break-after: always;
+        font-size:20px;
+}
+
+.LBA_name {
+	width:70%;
+	height:50%;
+	margin:0;
+	display:inline-block;
+	text-align: center;
+	padding-top:10px;
+	
+}
+
+.LBA_id{
+	width:30%;
+	height:100%;
+	margin:0;
+	float:right;
+	padding-top:30px;
+}
+
+.LBA_dims{
+	width:70%;
+	height:50%;
+	margin:0;
+	display:inline-block;
+	padding-top:10px;
 }
 
 @media print{

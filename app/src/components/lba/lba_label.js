@@ -8,8 +8,16 @@ class LBALabel extends Component {
 		return (
 			
 				
-				<div className="LBALabel">
-					<p>{this.props.value.id}, {this.props.value.name}, {this.props.value.l}, {this.props.value.w}, {this.props.value.h} </p>
+				<div className="LBA_Label">
+					<div className="LBA_name">
+						{this.props.value.name}
+					</div>
+					<div className="LBA_id">
+						{this.props.value.id}
+					</div>
+					<div className="LBA_dims">
+						DIMENSION
+					</div>
 				</div>
 
 			
@@ -18,3 +26,5 @@ class LBALabel extends Component {
 }
 
 export default LBALabel;
+
+//<p>{this.props.value.id}, {this.props.value.name}, {this.props.value.l}, {this.props.value.w}, {this.props.value.h} </p>
