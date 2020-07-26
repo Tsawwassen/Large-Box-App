@@ -8,7 +8,7 @@ class LBAOutput extends Component {
 				<h1>print component</h1>
 				
 				{this.props.labels.map((value, index) => {
-        			return <p key={index}>{value.id}</p>
+        			return <p key={index}>{value.id}, {value.name}, {value.l}, {value.w}, {value.h} </p>
       			})}
       			
 				<button onClick={this.props.onClick}>Back</button>
