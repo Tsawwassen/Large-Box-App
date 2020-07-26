@@ -13,10 +13,10 @@ class LBALabel extends Component {
 						{this.props.value.name}
 					</div>
 					<div className="LBA_id">
-						{this.props.value.id}
+						<b>{this.props.value.id}</b>
 					</div>
 					<div className="LBA_dims">
-						{this.props.value.l} x {this.props.value.w} x {this.props.value.h}
+						<b>{this.props.value.l}</b> x <b>{this.props.value.w}</b> x <b>{this.props.value.h}</b>
 					</div>
 				</div>
 
