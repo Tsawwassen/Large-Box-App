@@ -116,7 +116,7 @@ class LargeBoxApp extends Component {
 
 	render () {
 		return (
-			<div>
+			<div className="container">
 	 			<h1 className="largeBoxAppHeader">LargeBoxApp</h1>
 	 			{this.state.view === this.INPUT_STATE &&
 					<LBAInput value={this.state.value} onChange={this.handleInputChange} onSubmit={this.handleCreateButton} />

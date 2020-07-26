@@ -6,13 +6,15 @@ class LBAOutput extends Component {
 		return (
 			<div>
 				<h1 className="largeBoxAppHeader">print component</h1>
+				<button onClick={this.props.onClick} className="btn btn-primary backButton" id="test">Back</button>
 				
 				{this.props.labels.map((value, index) => {
         			//return <p key={index}>{value.id}, {value.name}, {value.l}, {value.w}, {value.h} </p>
         			return <LBALabel key={index} value={value} />
       			})}
       			
-				<button onClick={this.props.onClick} className="backButton">Back</button>
+				
+				
 			</div>
 		);
   	}
