@@ -1,0 +1,21 @@
+
+.LBALabel{
+	    border-style: solid; /** Used for testing **/
+        width:50.8mm;
+        height:25.4mm;
+        page-break-after: always;
+}
+
+@media print{
+  /** Remove Padding-top of body **/
+  body {
+    padding: 0;
+  }
+  .container{
+      padding: 0;
+    }
+  /** Remove unwanted print items **/
+   nav, header, .largeBoxAppHeader, .backButton{
+    display:none;
+  }
+}
