@@ -16,7 +16,7 @@ class LBALabel extends Component {
 						{this.props.value.id}
 					</div>
 					<div className="LBA_dims">
-						DIMENSION
+						{this.props.value.l} X {this.props.value.w} X {this.props.value.h}
 					</div>
 				</div>
 
