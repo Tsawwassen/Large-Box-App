@@ -37,15 +37,23 @@
 }
 
 @media print{
-  /** Remove Padding-top of body **/
-  body {
-    padding: 0;
-  }
-  .container{
-      padding: 0;
+	@page {
+      size: auto;
+      margin: 12.5mm;
     }
-  /** Remove unwanted print items **/
-   nav, header, .largeBoxAppHeader, #test{
-    display:none;
-  }
+	/** Remove Padding-top of body **/
+	body {
+	    padding: 0;
+	    margin: 0mm;
+	}
+  	.container{
+      	padding: 0 important!;
+    }
+   	.LBA_Label{
+   		margin-right:0;
+   	}
+  	/** Remove unwanted print items **/
+   	nav, header, .largeBoxAppHeader, #test{
+    	display:none;
+  	}
 }
