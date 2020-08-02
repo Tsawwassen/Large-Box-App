@@ -38,8 +38,8 @@
 
 @media print{
 	@page {
-      size: auto;
-      margin: 12.5mm;
+      size: 3in 1.5in;
+      
     }
 	/** Remove Padding-top of body **/
 	body {
