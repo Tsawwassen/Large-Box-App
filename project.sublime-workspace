@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"class",
+				"className"
+			],
+			[
+				"LBA",
+				"LBALabel"
+			],
+			[
 				"handl",
 				"handleBackButton"
 			],
@@ -39,43 +47,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/src/components/app/App.js",
-			"settings":
-			{
-				"buffer_size": 597,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/src/components/lba/lba.js",
-			"settings":
-			{
-				"buffer_size": 3462,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "lba.js"
-			}
-		},
-		{
-			"file": "app/src/components/lba/lba_output.js",
-			"settings":
-			{
-				"buffer_size": 403,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "lba_output.js"
-			}
-		},
-		{
-			"file": "app/src/components/lba/lba_input.js",
-			"settings":
-			{
-				"buffer_size": 383,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -115,22 +86,19 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/mitchell/projects/LargeBoxApp",
-		"/home/mitchell/projects/LargeBoxApp/app",
-		"/home/mitchell/projects/LargeBoxApp/app/src",
-		"/home/mitchell/projects/LargeBoxApp/app/src/components",
-		"/home/mitchell/projects/LargeBoxApp/app/src/components/lba"
-	],
 	"file_history":
 	[
-		"/home/mitchell/projects/LargeBoxApp/app/src/components/nav/nav.js",
+		"/home/mitchell/projects/LargeBoxApp/app/src/components/lba/lba_label.css",
+		"/home/mitchell/projects/LargeBoxApp/app/src/components/lba/lba_label.js",
 		"/home/mitchell/projects/LargeBoxApp/app/src/components/lba/lba_input.js",
+		"/home/mitchell/projects/LargeBoxApp/app/src/components/lba/lba_output.js",
+		"/home/mitchell/projects/LargeBoxApp/app/src/components/lba/lba.js",
+		"/home/mitchell/projects/LargeBoxApp/package.json",
+		"/home/mitchell/projects/LargeBoxApp/app/src/components/app/App.js",
+		"/home/mitchell/projects/LargeBoxApp/app/src/components/nav/nav.js",
 		"/home/mitchell/projects/LargeBoxApp/README.md",
 		"/home/mitchell/projects/LargeBoxApp/app/src/components/nav/nav.jas",
 		"/home/mitchell/projects/LargeBoxApp/app/src/index.js",
-		"/home/mitchell/projects/LargeBoxApp/package.json",
 		"/home/mitchell/projects/owVideoAnalyzer/Overwatch-VideoAnalyzer/my-app/src/index.js",
 		"/home/mitchell/projects/owVideoAnalyzer/Overwatch-VideoAnalyzer/my-app/src/components/VideoAnalyzer.js",
 		"/home/mitchell/projects/owVideoAnalyzer/Overwatch-VideoAnalyzer/my-app/src/App.test.js",
@@ -138,7 +106,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -170,128 +138,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/src/components/app/App.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								529,
-								529
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/src/components/lba/lba.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3462,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								454,
-								454
-							]
-						],
-						"settings":
-						{
-							"auto_name": "lba.js",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 630.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/src/components/lba/lba_output.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								191,
-								191
-							]
-						],
-						"settings":
-						{
-							"auto_name": "lba_output.js",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/src/components/lba/lba_input.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 383,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								152,
-								152
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
