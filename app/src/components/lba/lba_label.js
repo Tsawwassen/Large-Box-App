@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-//CSS
-import './lba_label.css';
+//SCSS
+import './lba_label.scss';
 
 class LBALabel extends Component {
 	render () {
