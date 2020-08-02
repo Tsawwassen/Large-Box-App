@@ -61,12 +61,16 @@ The current process regarding large boxes in the Reverse Logistics (RL) departme
 *Double check the default box type.
 **Check labels that are being used.
 
+  ## TODO / NOTES
+    1. Box dimensions are getting placed on a new line if there are too many digits.
+        Example : 25.3 x 20.25 x 12.75 was displayed on two lines.
+    2. Labels are actually 3 inches wide, 1.5 inches tall.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~                                                                                   ~
 ~ This app was created on my own time for my current job at Ingram Micro.           ~
 ~ I was not asked by anyone at my job to create this app.                           ~
-~ The job inspired by to document a process, and how it can be improved.             ~
+~ The job inspired by to document a process, and how it can be improved.            ~
 ~                                                                                   ~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
